@@ -1,0 +1,7 @@
+public class prueba 
+{
+public static void main(string[] args)
+{
+system.outprintl("hola mundo");
+}
+}
