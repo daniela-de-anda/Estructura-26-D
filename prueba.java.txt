@@ -2,6 +2,6 @@ public class prueba
 {
 public static void main(string[] args)
 {
-system.out.println("hola mundo");
+system.out.println("hello world");
 }
 }
