@@ -1,0 +1,7 @@
+C:\Users\marti\OneDrive\Desktop\Estructura 26-D\practica1.0\practica1.0\bin\Debug\practica1.0.exe.config
+C:\Users\marti\OneDrive\Desktop\Estructura 26-D\practica1.0\practica1.0\bin\Debug\practica1.0.exe
+C:\Users\marti\OneDrive\Desktop\Estructura 26-D\practica1.0\practica1.0\bin\Debug\practica1.0.pdb
+C:\Users\marti\OneDrive\Desktop\Estructura 26-D\practica1.0\practica1.0\obj\Debug\practica1.0.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Desktop\Estructura 26-D\practica1.0\practica1.0\obj\Debug\practica1.0.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Desktop\Estructura 26-D\practica1.0\practica1.0\obj\Debug\practica1.0.exe
+C:\Users\marti\OneDrive\Desktop\Estructura 26-D\practica1.0\practica1.0\obj\Debug\practica1.0.pdb
