@@ -4,60 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System;
-
-public class estudiante
+namespace practica1._0
 {
-    // Propiedades
-    public string Nombre { get; set; }
-    public string Carrera { get; set; }
-
-    // Arreglo de calificaciones
-    private double[] calificaciones;
-
-    // Constructor
-    public estudiante(string nombre, string carrera, int cantidadCalificaciones)
+    internal class estudiante
     {
-        Nombre = nombre;
-        Carrera = carrera;
-        calificaciones = new double[cantidadCalificaciones];
-    }
+        string Nombre;
+        string Carrera;
+        int[] calificaciones;
 
-    // Método para capturar las calificaciones
-    public void CapturarCalificaciones()
-    {
-        for (int i = 0; i < calificaciones.Length; i++)
+        public Estudiante1(string nombre, string carrera, int num_calif)
         {
-            Console.Write("Ingresa la calificación " + (i + 1) + ": ");
-            calificaciones[i] = Convert.ToDouble(Console.ReadLine());
+            this.Nombre = nombre;
+            this.Carrera = carrera;
+            this.calificaciones = new int[num_calif];
         }
-    }
-
-    // Método para obtener el promedio
-    public double ObtenerPromedio()
-    {
-        double suma = 0;
-
-        for (int i = 0; i < calificaciones.Length; i++)
+        public void CapturaCalificacion(int materia, int calif)
         {
-            suma += calificaciones[i];
+            calificaciones[materia] = calif;
         }
-
-        return suma / calificaciones.Length;
-    }
-
-    // Método para decir si el estudiante es regular
-    public string EsRegular()
-    {
-        double promedio = ObtenerPromedio();
-
-        if (promedio >= 70)
+        public int getPromedio()
         {
-            return "El estudiante es regular.";
+            int suma = 0;
+            int promedio = 0;
+            for (int i = 0; i < calificaciones.Length; i++)
+            {
+                suma += calificaciones[i];
+            }
+            promedio = suma / calificaciones.Length;
+            return promedio;
         }
-        else
+        public bool Esregular()
         {
-            return "El estudiante no es regular.";
+            for (int i = 0; i < calificaciones.Length; i++)
+            {
+                if (calificaciones[i] < 70)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
+
+    } 
+}
     }
 }
